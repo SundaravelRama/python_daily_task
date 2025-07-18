@@ -1,3 +1,7 @@
+
+
+
+
 # ===== String Methods =====
 # x="90"
 # import string
@@ -234,44 +238,44 @@
 # this condition check whether given input is str, number,or special or mix of all .
 
 # import string
-a = input("enter a valuse: ")
-b=input("enter a valuse : ")
-if (a.isnumeric())and(b.isnumeric()):
-    print("both inputs are number")
-# 657899
-elif(a.isalpha()) and (b.isalpha()):
-    print("both are strings")
-elif(a.isalpha()) and (b.isnumeric()):
-    print("a is string but  b is number")
-elif (b.isalpha()) and (a.isnumeric()):
-    print("a is number and b is string")
-else:
-    a_res=[]
-    b_res=[]
-    for i in a :
-        if (i.isalpha()):
-            a_res.append("alphabetic")
-        elif(i.isnumeric()):
-            a_res.append("number")
-        elif((not(i.isalnum()))):
-            a_res.append("special character")
-    # print(a_res)
-    for i in b :
-        if (i.isalpha()):
-            b_res.append("alphabetic")
-        elif(i.isnumeric()):
-            b_res.append("number")
-        elif((not(i.isalnum()))):
-            b_res.append("special character")
-    # print(set(b_res))
-    setA=set(a_res)
-    setB=set(b_res)
-    listA=list(setA)
-    listB=list(setB)
-    if (len(listA)==1) and (len(listB)==1) and (listA[0]=="special character") and(listB[0]=="special character"):
-        print("both are special character only")
-    else:
-        print("In this string contains mix of {}".format(listA[:]))
+# a = input("enter a valuse: ")
+# b=input("enter a valuse : ")
+# if (a.isnumeric())and(b.isnumeric()):
+#     print("both inputs are number")
+# # 657899
+# elif(a.isalpha()) and (b.isalpha()):
+#     print("both are strings")
+# elif(a.isalpha()) and (b.isnumeric()):
+#     print("a is string but  b is number")
+# elif (b.isalpha()) and (a.isnumeric()):
+#     print("a is number and b is string")
+# else:
+#     a_res=[]
+#     b_res=[]
+#     for i in a :
+#         if (i.isalpha()):
+#             a_res.append("alphabetic")
+#         elif(i.isnumeric()):
+#             a_res.append("number")
+#         elif((not(i.isalnum()))):
+#             a_res.append("special character")
+#     # print(a_res)
+#     for i in b :
+#         if (i.isalpha()):
+#             b_res.append("alphabetic")
+#         elif(i.isnumeric()):
+#             b_res.append("number")
+#         elif((not(i.isalnum()))):
+#             b_res.append("special character")
+#     # print(set(b_res))
+#     setA=set(a_res)
+#     setB=set(b_res)
+#     listA=list(setA)
+#     listB=list(setB)
+#     if (len(listA)==1) and (len(listB)==1) and (listA[0]=="special character") and(listB[0]=="special character"):
+#         print("both are special character only")
+#     else:
+#         print("In this string contains mix of {}".format(listA[:]))
 
 # ===== Match Case (Switch Equivalent) =====
 # day=int(input("enter a day :"))
@@ -283,3 +287,16 @@ else:
 #     case 3 :
 #         print("today is wednesday")
 #
+
+#=============For Loop==============
+# a=int(input("enter a number: "))
+# for i in range(a):
+#     print(i)
+
+
+#====== while loop ==========
+a=int(input("enter a number: "))
+i=0
+while (i<a):
+    print(i)
+    i+=1
